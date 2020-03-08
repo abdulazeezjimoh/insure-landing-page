@@ -1,9 +1,20 @@
+@font-face {
+    font-family: "DM Serif Display";
+    src: url(../fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url(../fonts/Karla/Karla-Regular.ttf);
+    font-weight: 400, 700;
+}
+
 body {
     margin: 0px;
     font-size: 16px;
     font-weight: 400;
     font-family: "Karla", sans-serif;
-    background-color: hsl(0, 77%, 62%);
 }
 
 ul, li, a, p, h1, h2, h3 {
@@ -49,7 +60,7 @@ ul, li, a, p, h1, h2, h3 {
 }
 
 .navbar {
-    /* z-index: 50; */
+    z-index: 50;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -101,29 +112,18 @@ ul, li, a, p, h1, h2, h3 {
                 color: hsl(270, 9%, 17%);
             }
     
-    
 .image-intro-mobile {
     display: block;
     width: 100%;
 }
 
-
 .image-intro-desktop {
     display: none;
-    top: 100px;
     right: 10vw;
-    position: absolute;
 }
 
 .pattern {
     position: absolute;
-}
-
-.mobile-pattern {
-    display: block;
-}
-.desktop-pattern {
-    display: none;
 }
 
 .short-line {
@@ -147,23 +147,25 @@ ul, li, a, p, h1, h2, h3 {
     .preamble {
         text-align: center;
         width: 100%;
-        padding-right: 0px;
-        margin-top: 80px;
-        margin-bottom: 100px;
-        margin-right: auto; }
+        margin: 80px 0;
+        margin-bottom: 100px; }
         .preamble-short-line {
             display: none;
         }
         .preamble .title {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         .preamble .paragraph {
             margin-bottom: 35px;
         }
-        .right-pattern-mobile {
+        .mobile-pattern {
+            display: block;
             z-index: 2;
             bottom: -175px;
             right: 0;
+        }
+        .desktop-pattern {
+            display: none;
         }
 
 .service-feature {
@@ -208,13 +210,11 @@ ul, li, a, p, h1, h2, h3 {
         color: hsl(0, 0%, 98%); }
         .find-out-more .title {
             line-height: 40px;
-            font-size: 38px;
             margin-bottom: 30px;
         }
 
 .footer {
     box-sizing: border-box;
-    /* height: 400px; */
     background-color: hsl(0, 0%, 98%);
     background-image: url(../images/bg-pattern-footer-mobile.svg);
     background-repeat: no-repeat; }
@@ -238,8 +238,7 @@ ul, li, a, p, h1, h2, h3 {
     .footer-link-ctn {
         display: flex;
         flex-wrap: wrap;
-        padding-bottom: 80px;
-     }
+        padding-bottom: 80px; }
         .link-list-box {
             width: 100%;
             text-align: center;}
@@ -255,3 +254,200 @@ ul, li, a, p, h1, h2, h3 {
             .list-links:not(:last-child) {
                 margin-bottom: 10px;
             }
+
+@media (min-width: 500px) {
+    .find-out-more, .feature {
+        padding: 0 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .preamble {
+        text-align: center;
+        width: 90%;
+        margin: 80px auto; }
+    .find-out-more {
+        height: 250px;
+        background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+        justify-content: space-between;
+        text-align: left;
+        flex-direction: row; }
+        .find-out-more .title {
+            width: 50%;
+            margin-bottom: 0px;
+        }
+    .find-out-more, .feature {
+        padding: 0 50px;
+    }
+    .link-list-box {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .title {
+        font-size: 55px;
+    }
+    .sub-title {
+        font-size: 30px;
+    }
+    .image-intro-mobile {
+        display: none;
+    }
+    .navbar {
+        background-color: hsl(0, 0%, 98%); }
+        .toggler {
+            display: none;
+        }
+        .navlinks-ctn-mobile {
+            position: unset;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            height: 70px;
+            width: auto;
+            background-color: transparent;
+            background-image: none }
+            .navlinks {
+                width: auto;
+                font-weight: 700;
+                font-size: 1em;
+                color: hsl(273, 4%, 51%); }
+                .navlinks:hover {
+                    color: hsl(256, 26%, 20%);
+                }
+            .nav-btn {
+                font-size: 1em;
+                border: 2px solid hsl(256, 26%, 20%);
+                width: auto;
+                color: hsl(256, 26%, 20%); }
+                .nav-btn:hover {
+                    color: hsl(0, 0%, 98%);
+                    background-color: hsl(256, 26%, 20%);
+                }
+    .humanizing {
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: hsl(0, 0%, 98%);
+        background-color: hsl(256, 26%, 20%);
+        background-image: url(../images/bg-pattern-intro-left-desktop.svg);
+        background-position: bottom -330px left;
+        background-repeat: no-repeat; }
+        .preamble {
+            box-sizing: border-box;
+            width: 50%;
+            text-align: left;
+            padding-right: 40px;
+            margin: 0; }
+            .preamble-short-line {
+                display: block;
+                background-color: hsl(0, 0%, 98%);
+                margin-bottom: 40px;
+            }
+            .preamble .title {
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            .preamble .paragraph {
+                margin-bottom: 35px;
+            }
+            .mobile-pattern {
+                display: none;
+            }
+            .desktop-pattern {
+                display: block;
+                z-index: 2;
+                top: -80px;
+                right: 0;
+            }
+        .image-intro-desktop {
+            width: 47%;
+            display: block;
+            margin-top: 150px;
+        }
+    .different-short-line {
+        margin: unset;
+        margin-right: auto;
+    }
+    .different .title {
+        margin-top: 35px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+    .feature-ctn {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, auto);
+        padding: 50px 0; }
+        .feature {
+            text-align: left;
+            padding: unset; }
+    .find-out-more .title {
+        width: 60%;
+        line-height: 50px;
+    }
+    .footer {
+        background-image: url(../images/bg-pattern-footer-desktop.svg);
+    }
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center; }
+        .footer-top .logo {
+            margin-top: 90px;
+            margin-bottom: 25px;
+        }
+        .social-ctn {
+            margin: 0;
+            margin-top: 90px;
+            margin-bottom: 25px;
+            width: 15%;
+        }
+    .link-list-box {
+        width: 25%;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .area {
+        padding: 0 10vw;
+    }
+    .title {
+        font-size: 75px;
+    }
+    .sub-title {
+        font-size: 45px;
+    }
+    .paragraph {
+        font-size: 16px;
+    }
+    .humanizing {
+        height: 700px; }
+        .preamble-short-line {
+            margin-bottom: 50px;
+        }
+        .preamble .title {
+            line-height: 75px;
+            margin-bottom: 30px;
+        }
+        .preamble .paragraph {
+            margin-bottom: 45px;
+        }
+        .image-intro-desktop {
+            width: 50%;
+            margin-top: 250px;
+        }
+    .service-feature {
+        padding-top: 130px;
+        padding-bottom: 150px; }
+        .find-out-more .title {
+            width: 46%;
+            font-size: 55px;
+        }
+}
