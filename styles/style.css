@@ -321,9 +321,7 @@ ul, li, a, p, h1, h2, h3 {
                 }
             .nav-btn {
                 font-size: 1em;
-                border: 2px solid hsl(256, 26%, 20%);
-                width: auto;
-                color: hsl(256, 26%, 20%); }
+                width: auto; }
                 .nav-btn:hover {
                     color: hsl(0, 0%, 98%);
                     background-color: hsl(256, 26%, 20%);
@@ -370,15 +368,17 @@ ul, li, a, p, h1, h2, h3 {
             display: block;
             margin-top: 150px;
         }
-    .different-short-line {
-        margin: unset;
-        margin-right: auto;
-    }
-    .different .title {
-        margin-top: 35px;
-        margin-bottom: 30px;
-        text-align: left;
-    }
+    .different {
+        margin-top: 100px; }
+        .different-short-line {
+            margin: unset;
+            margin-right: auto;
+        }
+        .different .title {
+            margin-top: 35px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
     .feature-ctn {
         display: grid;
         grid-gap: 20px;
