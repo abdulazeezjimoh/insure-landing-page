@@ -71,12 +71,13 @@ ul, li, a, p, h1, h2, h3 {
         display: block;
     }
     .navlinks-ctn-mobile {
+        display: none;
+    }
+    .navlinks-ctn {
         top: 70px;
         right: 0;
         position: absolute;
         padding: 0 7vw;
-        /* padding-top: 25px; */
-        display: none;
         box-sizing: border-box;
         height: calc(100vh - 70px);
         width: 100vw;
@@ -300,7 +301,7 @@ ul, li, a, p, h1, h2, h3 {
         .toggler {
             display: none;
         }
-        .navlinks-ctn-mobile {
+        .navlinks-ctn {
             position: unset;
             padding: 0;
             display: flex;
@@ -422,7 +423,7 @@ ul, li, a, p, h1, h2, h3 {
         font-size: 75px;
     }
     .sub-title {
-        font-size: 45px;
+        font-size: 35px;
     }
     .paragraph {
         font-size: 16px;
