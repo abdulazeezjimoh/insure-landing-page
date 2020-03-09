@@ -320,6 +320,8 @@ ul, li, a, p, h1, h2, h3 {
                     color: hsl(256, 26%, 20%);
                 }
             .nav-btn {
+                border: 2px solid hsl(256, 26%, 20%);
+                color: hsl(256, 26%, 20%);
                 font-size: 1em;
                 width: auto; }
                 .nav-btn:hover {
@@ -354,6 +356,15 @@ ul, li, a, p, h1, h2, h3 {
             .preamble .paragraph {
                 margin-bottom: 35px;
             }
+            .btn {
+                border: 2px solid hsl(0, 0%, 98%);
+                color: hsl(0, 0%, 98%);
+                font-size: 1em;
+                width: auto; }
+                .btn:hover {
+                    background-color: hsl(0, 0%, 98%);
+                    color: hsl(256, 26%, 20%);
+                }
             .mobile-pattern {
                 display: none;
             }
