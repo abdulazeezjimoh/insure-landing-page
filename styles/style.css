@@ -356,15 +356,6 @@ ul, li, a, p, h1, h2, h3 {
             .preamble .paragraph {
                 margin-bottom: 35px;
             }
-            /* .preamble .btn {
-                border: 2px solid hsl(0, 0%, 98%);
-                color: hsl(0, 0%, 98%);
-                font-size: 1em;
-                width: auto; }
-                .preamble .btn:hover {
-                    background-color: hsl(0, 0%, 98%);
-                    color: hsl(256, 26%, 20%);
-                } */
             .mobile-pattern {
                 display: none;
             }
