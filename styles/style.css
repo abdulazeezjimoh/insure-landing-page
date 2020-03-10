@@ -1,15 +1,3 @@
-@font-face {
-    font-family: "DM Serif Display";
-    src: url(../fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Karla';
-    src: url(../fonts/Karla/Karla-Regular.ttf);
-    font-weight: 400, 700;
-}
-
 body {
     margin: 0px;
     font-size: 16px;
@@ -181,7 +169,7 @@ ul, li, a, p, h1, h2, h3 {
         margin-bottom: 50px; }
         .different-short-line {
             margin: auto;
-            background-color: hsl(270, 9%, 17%);
+            background-color: hsl(273, 4%, 51%);
         }
         .different .title {
             margin-top: 35px;
@@ -239,8 +227,8 @@ ul, li, a, p, h1, h2, h3 {
             display: flex;
             justify-content: space-between;
             margin-bottom: 40px; }
-            .icon:hover {
-                
+            .social-icon:hover {
+                filter: invert(24%) sepia(51%) saturate(54%) hue-rotate(315deg) brightness(17%) contrast(81%);
             }
     .footer-link-ctn {
         display: flex;
@@ -300,7 +288,7 @@ ul, li, a, p, h1, h2, h3 {
         font-size: 55px;
     }
     .sub-title {
-        font-size: 30px;
+        font-size: 25px;
     }
     .image-intro-mobile {
         display: none;
@@ -338,9 +326,11 @@ ul, li, a, p, h1, h2, h3 {
                     background-color: hsl(256, 26%, 20%);
                 }
     .humanizing {
-        height: 500px;
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 100px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         color: hsl(0, 0%, 98%);
         background-color: hsl(256, 26%, 20%);
@@ -349,9 +339,8 @@ ul, li, a, p, h1, h2, h3 {
         background-repeat: no-repeat; }
         .preamble {
             box-sizing: border-box;
-            width: 50%;
+            width: 46%;
             text-align: left;
-            padding-right: 40px;
             margin: 0; }
             .preamble-short-line {
                 display: block;
@@ -360,7 +349,7 @@ ul, li, a, p, h1, h2, h3 {
             }
             .preamble .title {
                 line-height: 50px;
-                margin-bottom: 10px;
+                margin-bottom: 15px;
             }
             .preamble .paragraph {
                 margin-bottom: 35px;
@@ -375,12 +364,14 @@ ul, li, a, p, h1, h2, h3 {
                 right: 0;
             }
         .image-intro-desktop {
-            width: 47%;
+            position: absolute;
+            width: 420px;
+            height: 580px;
             display: block;
-            margin-top: 150px;
+            top: 100px;
         }
     .different {
-        margin-top: 120px; }
+        margin-top: 100px; }
         .different-short-line {
             margin: unset;
             margin-right: auto;
@@ -440,20 +431,25 @@ ul, li, a, p, h1, h2, h3 {
         font-size: 16px;
     }
     .humanizing {
-        height: 700px; }
-        .preamble-short-line {
-            margin-bottom: 50px;
-        }
-        .preamble .title {
-            line-height: 75px;
-            margin-bottom: 30px;
-        }
-        .preamble .paragraph {
-            margin-bottom: 45px;
-        }
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 100px; }
+        .preamble {
+            box-sizing: border-box;
+            width: 48%;
+            text-align: left;
+            margin: 0; }
+            .preamble .title {
+                line-height: 65px;
+                margin-bottom: 20px;
+            }
+            .preamble .paragraph {
+                margin-bottom: 35px;
+            }
         .image-intro-desktop {
-            width: 50%;
-            margin-top: 250px;
+            width: 40%;
+            height: 600px;
+            top: 100px;
         }
     .service-feature {
         padding-top: 130px;
