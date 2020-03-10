@@ -25,6 +25,10 @@ ul, li, a, p, h1, h2, h3 {
     list-style: none;
 }
 
+.active {
+    cursor: pointer;
+}
+
 .title {
     font-family: "DM Serif Display";
     font-size: 45px;
@@ -234,8 +238,10 @@ ul, li, a, p, h1, h2, h3 {
             width: 45%;
             display: flex;
             justify-content: space-between;
-            margin-bottom: 40px;
-        }
+            margin-bottom: 40px; }
+            .icon:hover {
+                
+            }
     .footer-link-ctn {
         display: flex;
         flex-wrap: wrap;
@@ -251,6 +257,9 @@ ul, li, a, p, h1, h2, h3 {
             .list-links {
                 font-weight: 700;
                 color: hsl(256, 26%, 20%);
+            }
+            .list-links:hover {
+                text-decoration: underline;
             }
             .list-links:not(:last-child) {
                 margin-bottom: 10px;
